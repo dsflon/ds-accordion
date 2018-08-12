@@ -1,6 +1,6 @@
 /*
 
-ds-scroll-effect
+ds-accordions
 
 GitHub: https://github.com/dsflon/
 License: dsflon All Rights Reserved.
