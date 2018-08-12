@@ -10,7 +10,7 @@ ___
 # Install
 
 ```
-npm i ds-accordion -S
+npm i ds-acc -S
 ```
 
 ___
