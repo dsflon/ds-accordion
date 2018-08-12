@@ -1,17 +1,17 @@
-import DsAccordion from './ds-accordion';
+import DsAccordions from './ds-accordions';
 
-let dsAccordion = new DsAccordion(".accordion");
+let dsAccordions = new DsAccordions(".accordion");
 
-dsAccordion.OpenEnd = function(){
+dsAccordions.OpenEnd = function(){
     console.log("OpenEnd");
 };
-dsAccordion.CloseEnd = function(){
+dsAccordions.CloseEnd = function(){
     console.log("CloseEnd");
 };
 
 ////
 
-let dsAccordion2 = new DsAccordion(
+let dsAccordions2 = new DsAccordions(
 	".accordion2",
 	{
 		toggleSpeed: 200,
@@ -21,8 +21,8 @@ let dsAccordion2 = new DsAccordion(
 );
 
 setTimeout(function() {
-    dsAccordion2.Open( ".open" );
+    dsAccordions2.Open( ".open" );
 },1000);
 setTimeout(function() {
-    dsAccordion2.Close(".close");
+    dsAccordions2.Close(".close");
 },2000);

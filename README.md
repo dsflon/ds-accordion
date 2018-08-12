@@ -1,7 +1,7 @@
-# ds-accordion ( Don't Need jQuery )
+# ds-accordions ( Don't Need jQuery )
 
 
-ds-accordionは、jQueryを必要としないアコーディオン機能のライブラリです。
+ds-accordionsは、jQueryを必要としないアコーディオン機能のライブラリです。
 - Target browser : IE9+
 - IE9の場合は transition 無しでアコーディオンが開閉します。
 
@@ -10,7 +10,7 @@ ___
 # Install
 
 ```
-npm i ds-acc -S
+npm i ds-accordions -S
 ```
 
 ___
@@ -18,7 +18,7 @@ ___
 # Import
 
 ```
-import DsAccordion from 'ds-accordion';
+import DsAccordions from 'ds-accordions';
 ```
 
 ___
@@ -26,7 +26,7 @@ ___
 # Constructor
 
 ```
-new DsAccordion(element [, option]);
+new DsAccordions(element [, option]);
 ```
 |Argument|Data type|Default|Descroption|
 |:-------|:--------|:------|:----------|
@@ -58,20 +58,20 @@ ___
 [https://dsflon.github.io/ds-accordion/](https://dsflon.github.io/ds-accordion/)
 
 ```
-import DsAccordion from 'ds-accordion';
+import DsAccordions from 'ds-accordions';
 
-let dsAccordion = new DsAccordion(".accordion");
+let DsAccordions = new DsAccordions(".accordion");
 
-dsAccordion.OpenEnd = function(){
+DsAccordions.OpenEnd = function(){
     console.log("OpenEnd");
 };
-dsAccordion.CloseEnd = function(){
+DsAccordions.CloseEnd = function(){
     console.log("CloseEnd");
 };
 
 ////
 
-let dsAccordion2 = new DsAccordion(
+let DsAccordions2 = new DsAccordions(
 	".accordion2",
 	{
 		toggleSpeed: 200,
@@ -81,9 +81,9 @@ let dsAccordion2 = new DsAccordion(
 );
 
 setTimeout(function() {
-    dsAccordion2.Open( ".open" );
+    DsAccordions2.Open( ".open" );
 },1000);
 setTimeout(function() {
-    dsAccordion2.Close(".close");
+    DsAccordions2.Close(".close");
 },2000);
 ```

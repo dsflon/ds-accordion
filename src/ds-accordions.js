@@ -13,11 +13,11 @@ License: dsflon All Rights Reserved.
     } else if (typeof exports === 'object') {
         module.exports = factory();
     } else {
-        root.DsAccordion = factory();
+        root.DsAccordions = factory();
     }
 }(this, function() {
 
-    function DsAccordion(selector, option) {
+    function DsAccordions(selector, option) {
 
         this.selector = selector;
         this.accordion = document.querySelectorAll( this.selector );
@@ -39,11 +39,11 @@ License: dsflon All Rights Reserved.
 
     }
 
-    DsAccordion.prototype.AddTransition = function(target) {
+    DsAccordions.prototype.AddTransition = function(target) {
         target.style.transition = "max-height " + this.toggleSpeed/1000 +"s";
         target.style.setProperty('-webkit-transition', "max-height " + this.toggleSpeed/1000 +"s");
     }
-    DsAccordion.prototype.RemoveTransition = function(target) {
+    DsAccordions.prototype.RemoveTransition = function(target) {
         target.style.transition = "none";
         target.style.setProperty('-webkit-transition', "none");
     }
@@ -53,7 +53,7 @@ License: dsflon All Rights Reserved.
     ** Init
     **
     **/
-    DsAccordion.prototype.Init = function() {
+    DsAccordions.prototype.Init = function() {
         var this_ = this;
 
         var initCss = "overflow: hidden;";
@@ -94,7 +94,7 @@ License: dsflon All Rights Reserved.
     ** Toggle
     **
     **/
-    DsAccordion.prototype.Toggle = function( element ) {
+    DsAccordions.prototype.Toggle = function( element ) {
 
         if(!this.accordion[0]) {
             console.error( this.selector + ": Not Found" );
@@ -121,7 +121,7 @@ License: dsflon All Rights Reserved.
     ** Open, Close
     **
     **/
-    DsAccordion.prototype.Open = function(element) {
+    DsAccordions.prototype.Open = function(element) {
 
         var this_ = this;
 
@@ -161,7 +161,7 @@ License: dsflon All Rights Reserved.
 
     }
 
-    DsAccordion.prototype.Close = function( element ) {
+    DsAccordions.prototype.Close = function( element ) {
 
         var this_ = this;
 
@@ -210,7 +210,7 @@ License: dsflon All Rights Reserved.
 
     }
 
-    DsAccordion.prototype.CloseIgnoreThis = function( element ) {
+    DsAccordions.prototype.CloseIgnoreThis = function( element ) {
 
         if(!this.accordion[0]) {
             console.error( this.selector + ": Not Found" );
@@ -252,7 +252,7 @@ License: dsflon All Rights Reserved.
     ** GetParent
     **
     **/
-    DsAccordion.prototype.GetParent = function( element, target ) {
+    DsAccordions.prototype.GetParent = function( element, target ) {
 
         var parent = element,
             i = 0,
@@ -292,7 +292,7 @@ License: dsflon All Rights Reserved.
 
     }
 
-    DsAccordion.prototype.AddClass = function( element, _className ) {
+    DsAccordions.prototype.AddClass = function( element, _className ) {
 
         if (element.classList) {
             element.classList.add(_className);
@@ -301,7 +301,7 @@ License: dsflon All Rights Reserved.
         }
 
     }
-    DsAccordion.prototype.RemoveClass = function( element, _className ) {
+    DsAccordions.prototype.RemoveClass = function( element, _className ) {
 
         if (element.classList) {
             element.classList.remove(_className);
@@ -310,7 +310,7 @@ License: dsflon All Rights Reserved.
         }
 
     }
-    DsAccordion.prototype.HasClass = function( element, _className ) {
+    DsAccordions.prototype.HasClass = function( element, _className ) {
 
         var ignore = false;
 
@@ -324,6 +324,6 @@ License: dsflon All Rights Reserved.
 
     }
 
-    return DsAccordion;
+    return DsAccordions;
 
 }));

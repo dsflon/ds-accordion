@@ -1,8 +1,8 @@
 {
-  "name": "ds-acc",
+  "name": "ds-accordions",
   "version": "0.0.0",
   "description": "",
-  "main": "./src/ds-accordion.js",
+  "main": "./src/ds-accordions.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --hot --inline",
     "build": "webpack --mode production",

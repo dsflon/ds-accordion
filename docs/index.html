@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>ds-accordion.js</title>
-    <meta name="description" content="ds-accordion.jsは、スクロールを起点とした、要素のアニメーションを実装します。jQueryを必要ありません。ライブラリ側ではclassを付け外しするだけで、アニメーションはcssでtransition、transformを用いて操作します。">
+	<title>ds-accordions.js</title>
+    <meta name="description" content="ds-accordions.jsは、スクロールを起点とした、要素のアニメーションを実装します。jQueryを必要ありません。ライブラリ側ではclassを付け外しするだけで、アニメーションはcssでtransition、transformを用いて操作します。">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<style>
 		body { background: #FFF; margin: 0px; overflow: hidden; overflow: auto;}
@@ -60,14 +60,14 @@
 
 	<main>
 
-		<h1>ds-accordion</h1>
-		<p>ds-accordionは、jQueryを必要としないアコーディオン機能のライブラリです。</p>
+		<h1>ds-accordions</h1>
+		<p>ds-accordionsは、jQueryを必要としないアコーディオン機能のライブラリです。</p>
 		<p><a href="https://github.com/dsflon/ds-accordion">https://github.com/dsflon/ds-accordion</a></p>
 
 		<section>
 			<h2>Default</h2>
 <div><pre data-type="javascript"><code>
-let dsAccordion = <mark>new DsAccordion(".accordion")</mark>;
+let DsAccordions = <mark>new DsAccordions(".accordion")</mark>;
 </code></pre></div>
 <div><pre data-type="HTML"><code>
 &lt;div class="<mark>accordion</mark>"&gt;
@@ -92,7 +92,7 @@ let dsAccordion = <mark>new DsAccordion(".accordion")</mark>;
 		<section>
 			<h2>Option</h2>
 <div><pre data-type="javascript"><code>
-let dsAccordion2 = new DsAccordion(
+let DsAccordions2 = new DsAccordions(
 	".accordion2",
 	<mark>{</mark>
 	<mark>	toggleSpeed: 200,</mark>
@@ -133,7 +133,7 @@ let dsAccordion2 = new DsAccordion(
 					</dd>
 				</dl>
 <div><pre data-type="javascript"><code>
-dsAccordion2.Open( <mark>".open"</mark> );
+DsAccordions2.Open( <mark>".open"</mark> );
 </code></pre></div>
 <div><pre data-type="HTML"><code>
 &lt;dl class="accordion2"&gt;
@@ -156,7 +156,7 @@ dsAccordion2.Open( <mark>".open"</mark> );
 					</dd>
 				</dl>
 <div><pre data-type="javascript"><code>
-dsAccordion2.Close( <mark>".close"</mark> );
+DsAccordions2.Close( <mark>".close"</mark> );
 </code></pre></div>
 <div><pre data-type="HTML"><code>
 &lt;dl class="accordion2"&gt;
